@@ -46,8 +46,11 @@
             ['clean']                                         // remove formatting button
             ];
 
-            var editor = new Quill('#editor', {
-                modules: { toolbar: toolbarOptions },
+            var quill = new Quill('#editor', {
+                modules: {
+                    formula: true,
+                    toolbar: toolbarOptions
+                },
                 theme: 'snow'
             });
             </script>
