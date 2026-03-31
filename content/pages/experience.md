@@ -1,4 +1,11 @@
-# Professional experience
+---
+title: Professional experience
+description: Roles, responsibilities, and impact highlights across recent work.
+updatedAt: 2026-03-31
+tags:
+  - experience
+  - career
+---
 
 ## Software Developer · Recent Team
 - **Period:** 2024 - Present

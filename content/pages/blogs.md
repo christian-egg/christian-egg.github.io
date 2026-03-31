@@ -1,4 +1,11 @@
-# Writing and notes
+---
+title: Writing and notes
+description: Blog drafts, guides, and learning notes in progress.
+updatedAt: 2026-03-31
+tags:
+  - blog
+  - notes
+---
 
 ## Designing a Portfolio for Iteration
 - **Format:** Post

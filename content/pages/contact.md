@@ -1,4 +1,10 @@
-# Get in touch
+---
+title: Get in touch
+description: Preferred ways to connect and expected response times.
+updatedAt: 2026-03-31
+tags:
+  - contact
+---
 
 Open to discussing software roles, collaborations, and product ideas.
 

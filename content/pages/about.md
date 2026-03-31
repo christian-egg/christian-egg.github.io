@@ -1,4 +1,10 @@
-# About me
+---
+title: About me
+description: A short background, working style, and interests.
+updatedAt: 2026-03-31
+tags:
+  - about
+---
 
 I enjoy turning rough ideas into clear product experiences that people can use right away.
 

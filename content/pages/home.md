@@ -1,6 +1,13 @@
-# Hey, I'm Christian.
+---
+title: Hey, I'm Christian.
+description: I build practical software products with a focus on clean user experience, maintainable architecture, and fast iteration.
+updatedAt: 2026-03-31
+tags:
+  - home
+  - portfolio
+---
 
-I build practical software products with a focus on clean user experience, maintainable architecture, and fast iteration.
+Portfolio in progress.
 
 ## Focus Areas
 

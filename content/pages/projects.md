@@ -1,4 +1,11 @@
-# Selected projects
+---
+title: Selected projects
+description: Current and recent projects with status, stack, and context.
+updatedAt: 2026-03-31
+tags:
+  - projects
+  - work
+---
 
 ## Portfolio Site
 - **Status:** In Progress
