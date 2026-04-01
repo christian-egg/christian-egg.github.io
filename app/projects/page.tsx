@@ -1,9 +1,24 @@
-import PageMarkdown from "@/components/page-markdown";
+import ProjectCard from "@/components/projects/project-card";
+import { getProjects } from "@/lib/projects";
 
 export default function ProjectsPage() {
+  const projects = getProjects();
+
   return (
-    <section>
-      <PageMarkdown page="projects" />
+    <section className="space-y-6">
+      <header className="space-y-2">
+        <h1 className="text-3xl font-semibold text-foreground">Projects</h1>
+        <p className="max-w-3xl text-sm leading-6 text-muted-foreground">
+          A modular view of selected work, including live links, source code, and
+          implementation notes.
+        </p>
+      </header>
+
+      <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
+        {projects.map((project) => (
+          <ProjectCard key={project.slug} project={project} />
+        ))}
+      </div>
     </section>
   );
 }
