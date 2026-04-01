@@ -7,9 +7,7 @@ import {
   BriefcaseBusiness,
   ExternalLink,
   FolderKanban,
-  Github,
   Home,
-  Linkedin,
   Mail,
   PenSquare,
   UserRound,
@@ -39,11 +37,15 @@ const NAV_ITEMS: NavItem[] = [
 ];
 
 const CONNECT_ITEMS: ConnectItem[] = [
-  { href: "https://github.com/christian-egg", label: "GitHub", icon: Github },
+  {
+    href: "https://github.com/christian-egg",
+    label: "GitHub",
+    icon: FolderKanban,
+  },
   {
     href: "https://www.linkedin.com/in/christian-egg/",
     label: "LinkedIn",
-    icon: Linkedin,
+    icon: BriefcaseBusiness,
   },
 ];
 
