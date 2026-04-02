@@ -65,10 +65,7 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
           <ProjectStatusBadge status={project.status} />
         </div>
 
-        <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-muted-foreground">
-          <span>{project.author}</span>
-          <span>{formatDate(project.date)}</span>
-        </div>
+        <p className="text-sm text-muted-foreground">{formatDate(project.date)}</p>
 
         <ProjectTags tags={project.tags} />
 

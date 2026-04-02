@@ -57,9 +57,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <ProjectTags tags={project.tags} />
 
         <div className="mt-5 border-t border-border pt-4">
-          <p className="mb-3 text-xs text-muted-foreground">
-            {project.author} · {formatDate(project.date)}
-          </p>
+          <p className="mb-3 text-xs text-muted-foreground">{formatDate(project.date)}</p>
           <div className="flex flex-wrap gap-2">
             {project.links.visit ? (
               <a

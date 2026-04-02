@@ -9,7 +9,6 @@
   "status": "shipped",
   "featured": true,
   "date": "2025-09-20",
-  "author": "Christian Egg",
   "stack": ["React", "TypeScript", "REST API", "Chart.js"],
   "links": {
     "visit": "https://example.com/dashboard"

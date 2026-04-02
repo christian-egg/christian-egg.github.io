@@ -19,7 +19,6 @@ export type Project = {
   status: ProjectStatus;
   featured: boolean;
   date: string;
-  author: string;
   stack: string[];
   links: ProjectLinks;
   content: string;

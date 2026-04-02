@@ -9,7 +9,6 @@
   "status": "in-progress",
   "featured": true,
   "date": "2026-03-31",
-  "author": "Christian Egg",
   "stack": ["Next.js", "TypeScript", "Tailwind CSS", "GitHub Actions"],
   "links": {
     "visit": "https://christian-egg.github.io/",

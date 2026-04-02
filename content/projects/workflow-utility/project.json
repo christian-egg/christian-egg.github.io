@@ -9,7 +9,6 @@
   "status": "planned",
   "featured": false,
   "date": "2026-02-14",
-  "author": "Christian Egg",
   "stack": ["Node.js", "TypeScript", "Commander", "pnpm"],
   "links": {
     "github": "https://github.com/christian-egg"
