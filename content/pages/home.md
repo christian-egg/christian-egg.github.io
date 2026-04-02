@@ -9,7 +9,7 @@ tags:
 
 I'm pursuing my **M.S. in Computer Science** at **UW–Madison** (2024–2026, GPA 3.80) after graduating from **UIUC** with a **B.S. in Computer Science** (2020–2024, GPA 3.96). My research focuses on **making AI systems more trustworthy** through rigorous safety evaluations and monitoring, and on **security and robustness** for AI agents.
 
-## What I'm focused on
+## Some things I've worked on
 
 - **Process reward models & reasoning:** I contributed to work on synthetic chain-of-thought data for training process reward models, including **VersaPRM** (ICML 2025).
 - **LLM behavior & safety:** I've studied plagiarism in model outputs (NSF REU at Penn State) and stay active in the **Wisconsin AI Safety Initiative** as exec board and tech scholar.
