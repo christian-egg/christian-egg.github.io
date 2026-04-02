@@ -15,8 +15,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Christian Egg",
-  description: "Portfolio site for Christian Egg",
+  title: "Christian Classen",
+  description: "Portfolio site for Christian Classen",
 };
 
 export default function RootLayout({

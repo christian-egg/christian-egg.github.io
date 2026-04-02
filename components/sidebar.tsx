@@ -43,7 +43,7 @@ const CONNECT_ITEMS: ConnectItem[] = [
     icon: FolderKanban,
   },
   {
-    href: "https://www.linkedin.com/in/christian-egg/",
+    href: "https://www.linkedin.com/in/christian-classen/",
     label: "LinkedIn",
     icon: BriefcaseBusiness,
   },
@@ -66,9 +66,9 @@ export default function Sidebar() {
         <div>
           <div className="mb-8 border-b border-sidebar-border pb-6">
             <div className="mb-3 flex h-14 w-14 items-center justify-center rounded-full bg-accent text-accent-foreground">
-              CE
+              CC
             </div>
-            <p className="text-lg font-semibold text-foreground">Christian Egg</p>
+            <p className="text-lg font-semibold text-foreground">Christian Classen</p>
             <p className="mt-1 text-sm text-muted-foreground">
               Software developer and builder.
             </p>
