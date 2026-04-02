@@ -41,7 +41,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       </Link>
 
       <div className="flex flex-1 flex-col p-5">
-        <div className="mb-4 space-y-1">
+        <div className="mb-2 space-y-1">
           <h3 className="text-lg font-semibold text-foreground">
             <Link
               href={`/projects/${project.slug}`}
@@ -51,9 +51,9 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             </Link>
           </h3>
           <p className="text-xs leading-5 text-muted-foreground">{project.subtitle}</p>
+          <p className="text-sm leading-6 text-foreground">{project.shortBlurb}</p>
         </div>
 
-        <p className="mb-4 text-sm leading-6 text-foreground">{project.shortBlurb}</p>
         <ProjectTags tags={project.tags} />
 
         <div className="mt-5 border-t border-border pt-4">
