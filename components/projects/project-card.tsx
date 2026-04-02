@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ExternalLink, Github } from "lucide-react";
+import { Code2, ExternalLink } from "lucide-react";
 import type { Project } from "@/lib/projects";
 import ProjectStatusBadge from "@/components/projects/project-status-badge";
 import ProjectTags from "@/components/projects/project-tags";
@@ -77,7 +77,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 className="inline-flex items-center gap-2 rounded-md border border-border bg-background px-3 py-2 text-sm text-foreground transition-colors hover:bg-muted"
               >
                 GitHub
-                <Github className="h-3.5 w-3.5" />
+                <Code2 className="h-3.5 w-3.5" />
               </a>
             ) : null}
             <Link

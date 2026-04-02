@@ -1,0 +1,17 @@
+{
+  "order": 2,
+  "title": "Workflow Utility",
+  "subtitle": "CLI automation for repeatable project setup",
+  "shortBlurb": "A TypeScript command-line utility for reducing manual setup steps and standardizing daily workflows.",
+  "thumbnail": "/projects/workflow-utility-thumb.png",
+  "heroImage": "/projects/workflow-utility-hero.png",
+  "tags": ["cli", "automation", "typescript"],
+  "status": "planned",
+  "featured": false,
+  "date": "2026-02-14",
+  "author": "Christian Egg",
+  "stack": ["Node.js", "TypeScript", "Commander", "pnpm"],
+  "links": {
+    "github": "https://github.com/christian-egg"
+  }
+}
