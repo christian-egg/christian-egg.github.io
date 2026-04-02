@@ -75,8 +75,15 @@ export default function Sidebar() {
       <div className="flex h-full flex-col justify-between p-6">
         <div>
           <div className="mb-8 border-b border-sidebar-border pb-6">
-            <div className="mb-3 flex h-14 w-14 items-center justify-center rounded-full bg-accent text-accent-foreground">
-              CC
+            <div className="mb-3 h-14 w-14 shrink-0 overflow-hidden rounded-full border border-sidebar-border bg-muted">
+              <Image
+                src="/images/christian_pfp.jpg"
+                alt="Christian Classen"
+                width={56}
+                height={56}
+                className="h-full w-full object-cover"
+                priority
+              />
             </div>
             <p className="text-lg font-semibold text-foreground">Christian Classen</p>
             <p className="mt-1 text-sm text-muted-foreground">
