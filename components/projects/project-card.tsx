@@ -28,7 +28,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       <Link
         href={`/projects/${project.slug}`}
         aria-label={`View ${project.title} project`}
-        className="group relative block aspect-[16/9] w-full overflow-hidden border-b border-border bg-muted outline-none ring-offset-background transition-opacity hover:opacity-95 focus-visible:ring-2 focus-visible:ring-foreground focus-visible:ring-offset-2"
+        className="group relative block aspect-[16/10] w-full overflow-hidden border-b border-border bg-muted outline-none ring-offset-background transition-opacity hover:opacity-95 focus-visible:ring-2 focus-visible:ring-foreground focus-visible:ring-offset-2 md:min-h-[14rem]"
       >
         <div
           aria-hidden
