@@ -1,8 +1,8 @@
 {
   "order": 2,
   "title": "Workflow Utility",
-  "subtitle": "CLI automation for repeatable project setup",
-  "shortBlurb": "A TypeScript command-line utility for reducing manual setup steps and standardizing daily workflows.",
+  "subtitle": "This is the third placeholder project.",
+  "shortBlurb": "This is the third placeholder project.",
   "thumbnail": "/projects/workflow-utility-thumb.png",
   "heroImage": "/projects/workflow-utility-hero.png",
   "tags": ["cli", "automation", "typescript"],

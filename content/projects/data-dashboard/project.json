@@ -1,8 +1,8 @@
 {
   "order": 3,
   "title": "Data Dashboard",
-  "subtitle": "Operational reporting experience for quick analysis",
-  "shortBlurb": "A metrics dashboard that emphasizes readable visuals and efficient filtering for day-to-day monitoring.",
+  "subtitle": "This is the second placeholder project.",
+  "shortBlurb": "This is the second placeholder project.",
   "thumbnail": "/projects/data-dashboard-thumb.png",
   "heroImage": "/projects/data-dashboard-hero.png",
   "tags": ["analytics", "dashboard", "react"],
