@@ -35,22 +35,22 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           className="h-full w-full bg-cover bg-center bg-no-repeat transition-transform duration-200 group-hover:scale-[1.02]"
           style={{ backgroundImage: `url("${project.thumbnail}")` }}
         />
+        <span className="pointer-events-none absolute right-2 top-2 z-10 drop-shadow-sm">
+          <ProjectStatusBadge status={project.status} />
+        </span>
       </Link>
 
       <div className="flex flex-1 flex-col p-5">
-        <div className="mb-4 flex items-start justify-between gap-3">
-          <div>
-            <h3 className="text-lg font-semibold text-foreground">
-              <Link
-                href={`/projects/${project.slug}`}
-                className="transition-colors hover:text-accent-foreground"
-              >
-                {project.title}
-              </Link>
-            </h3>
-            <p className="mt-1 text-sm text-muted-foreground">{project.subtitle}</p>
-          </div>
-          <ProjectStatusBadge status={project.status} />
+        <div className="mb-4 space-y-1">
+          <h3 className="text-lg font-semibold text-foreground">
+            <Link
+              href={`/projects/${project.slug}`}
+              className="transition-colors hover:text-accent-foreground"
+            >
+              {project.title}
+            </Link>
+          </h3>
+          <p className="text-sm text-muted-foreground">{project.subtitle}</p>
         </div>
 
         <p className="mb-4 text-sm leading-6 text-foreground">{project.shortBlurb}</p>
