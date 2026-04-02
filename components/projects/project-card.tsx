@@ -25,14 +25,17 @@ function formatDate(dateString: string): string {
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <article className="flex h-full flex-col overflow-hidden rounded-xl border border-border bg-background">
-      <div className="relative aspect-[16/9] w-full overflow-hidden border-b border-border bg-muted">
+      <Link
+        href={`/projects/${project.slug}`}
+        aria-label={`View ${project.title} project`}
+        className="group relative block aspect-[16/9] w-full overflow-hidden border-b border-border bg-muted outline-none ring-offset-background transition-opacity hover:opacity-95 focus-visible:ring-2 focus-visible:ring-foreground focus-visible:ring-offset-2"
+      >
         <div
-          aria-label={`${project.title} thumbnail`}
-          role="img"
-          className="h-full w-full bg-cover bg-center bg-no-repeat"
+          aria-hidden
+          className="h-full w-full bg-cover bg-center bg-no-repeat transition-transform duration-200 group-hover:scale-[1.02]"
           style={{ backgroundImage: `url("${project.thumbnail}")` }}
         />
-      </div>
+      </Link>
 
       <div className="flex flex-1 flex-col p-5">
         <div className="mb-4 flex items-start justify-between gap-3">
@@ -80,12 +83,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 <Code2 className="h-3.5 w-3.5" />
               </a>
             ) : null}
-            <Link
-              href={`/projects/${project.slug}`}
-              className="inline-flex items-center gap-2 rounded-md border border-border bg-background px-3 py-2 text-sm text-foreground transition-colors hover:bg-muted"
-            >
-              Details
-            </Link>
           </div>
         </div>
       </div>
