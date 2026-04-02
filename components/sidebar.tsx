@@ -73,20 +73,22 @@ export default function Sidebar() {
       <div className="flex h-full flex-col justify-between p-6">
         <div>
           <div className="mb-8 border-b border-sidebar-border pb-6">
-            <div className="mb-3 h-14 w-14 shrink-0 overflow-hidden rounded-full border border-sidebar-border bg-muted">
-              <Image
-                src="/images/christian_pfp.jpg"
-                alt="Christian Classen"
-                width={56}
-                height={56}
-                className="h-full w-full object-cover"
-                priority
-              />
+            <div className="flex flex-col items-center text-center">
+              <div className="mb-4 h-32 w-32 shrink-0 overflow-hidden rounded-full border border-sidebar-border bg-muted">
+                <Image
+                  src="/images/christian_pfp.jpg"
+                  alt="Christian Classen"
+                  width={128}
+                  height={128}
+                  className="h-full w-full object-cover"
+                  priority
+                />
+              </div>
+              <p className="text-lg font-semibold text-foreground">Christian Classen</p>
+              <p className="mt-2 max-w-[16rem] text-sm text-muted-foreground">
+                M.S. Computer Science, UW–Madison · AI safety & ML research.
+              </p>
             </div>
-            <p className="text-lg font-semibold text-foreground">Christian Classen</p>
-            <p className="mt-1 text-sm text-muted-foreground">
-              M.S. Computer Science, UW–Madison · AI safety & ML research.
-            </p>
           </div>
 
           <nav aria-label="Primary navigation">
