@@ -53,7 +53,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           <p className="text-xs leading-5 text-muted-foreground">{project.subtitle}</p>
         </div>
 
-        <p className="mb-4 text-xs leading-5 text-foreground">{project.shortBlurb}</p>
+        <p className="mb-4 text-sm leading-6 text-foreground">{project.shortBlurb}</p>
         <ProjectTags tags={project.tags} />
 
         <div className="mt-5 border-t border-border pt-4">
