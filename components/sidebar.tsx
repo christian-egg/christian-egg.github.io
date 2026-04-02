@@ -10,7 +10,6 @@ import {
   FolderKanban,
   Home,
   Mail,
-  PenSquare,
   UserRound,
   Wrench,
 } from "lucide-react";
@@ -32,7 +31,6 @@ const NAV_ITEMS: NavItem[] = [
   { href: "/", label: "Home", icon: Home },
   { href: "/experience", label: "Experience", icon: BriefcaseBusiness },
   { href: "/projects", label: "Projects", icon: FolderKanban },
-  { href: "/blogs", label: "Blogs", icon: PenSquare },
   { href: "/about", label: "About", icon: UserRound },
   { href: "/contact", label: "Contact", icon: Mail },
   { href: "/tools", label: "Tools", icon: Wrench },
