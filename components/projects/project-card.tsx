@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Code2, ExternalLink } from "lucide-react";
 import type { Project } from "@/lib/projects";
 import ProjectStatusBadge from "@/components/projects/project-status-badge";
 import ProjectTags from "@/components/projects/project-tags";
@@ -66,10 +65,9 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 href={project.links.visit}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-md border border-border bg-muted px-3 py-2 text-sm text-foreground transition-colors hover:bg-nav-active"
+                className="inline-flex items-center rounded-md bg-foreground px-2 py-1 text-xs font-medium text-background transition-colors hover:bg-foreground/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-background focus-visible:ring-offset-2 focus-visible:ring-offset-foreground"
               >
                 Visit
-                <ExternalLink className="h-3.5 w-3.5" />
               </a>
             ) : null}
             {project.links.github ? (
@@ -77,10 +75,9 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 href={project.links.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-md border border-border bg-background px-3 py-2 text-sm text-foreground transition-colors hover:bg-muted"
+                className="inline-flex items-center rounded-md bg-foreground px-2 py-1 text-xs font-medium text-background transition-colors hover:bg-foreground/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-background focus-visible:ring-offset-2 focus-visible:ring-offset-foreground"
               >
                 GitHub
-                <Code2 className="h-3.5 w-3.5" />
               </a>
             ) : null}
           </div>
