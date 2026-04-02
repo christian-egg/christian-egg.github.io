@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import type { ComponentType } from "react";
@@ -23,7 +24,8 @@ type NavItem = {
 type ConnectItem = {
   href: string;
   label: string;
-  icon: ComponentType<{ className?: string }>;
+  iconSrc: string;
+  iconAlt: string;
 };
 
 const NAV_ITEMS: NavItem[] = [
@@ -40,12 +42,20 @@ const CONNECT_ITEMS: ConnectItem[] = [
   {
     href: "https://github.com/christian-egg",
     label: "GitHub",
-    icon: FolderKanban,
+    iconSrc: "/icons/social/icons8-github-50.png",
+    iconAlt: "GitHub",
+  },
+  {
+    href: "https://x.com/Christian_C_Egg",
+    label: "X",
+    iconSrc: "/icons/social/icons8-twitter-50.png",
+    iconAlt: "X",
   },
   {
     href: "https://www.linkedin.com/in/christian-classen/",
     label: "LinkedIn",
-    icon: BriefcaseBusiness,
+    iconSrc: "/icons/social/icons8-linkedin-50.png",
+    iconAlt: "LinkedIn",
   },
 ];
 
@@ -105,26 +115,28 @@ export default function Sidebar() {
             Connect
           </p>
           <ul className="space-y-2">
-            {CONNECT_ITEMS.map((item) => {
-              const Icon = item.icon;
-
-              return (
-                <li key={item.href}>
-                  <a
-                    href={item.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-between rounded-md px-3 py-2 text-sm text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
-                  >
-                    <span className="flex items-center gap-3">
-                      <Icon className="h-4 w-4" />
-                      {item.label}
-                    </span>
-                    <ExternalLink className="h-3.5 w-3.5" />
-                  </a>
-                </li>
-              );
-            })}
+            {CONNECT_ITEMS.map((item) => (
+              <li key={item.href}>
+                <a
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-between rounded-md px-3 py-2 text-sm text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+                >
+                  <span className="flex items-center gap-3">
+                    <Image
+                      src={item.iconSrc}
+                      alt={item.iconAlt}
+                      width={20}
+                      height={20}
+                      className="h-4 w-4 shrink-0 object-contain"
+                    />
+                    {item.label}
+                  </span>
+                  <ExternalLink className="h-3.5 w-3.5 shrink-0" />
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
