@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowLeft, Code2, ExternalLink } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import type { Project } from "@/lib/projects";
 import ProjectStatusBadge from "@/components/projects/project-status-badge";
 import ProjectTags from "@/components/projects/project-tags";
@@ -12,19 +12,17 @@ type ProjectDetailProps = {
 type LinkButtonProps = {
   href: string;
   label: string;
-  icon: React.ReactNode;
 };
 
-function LinkButton({ href, label, icon }: LinkButtonProps) {
+function LinkButton({ href, label }: LinkButtonProps) {
   return (
     <a
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-flex items-center gap-2 rounded-md bg-foreground px-3 py-2 text-sm font-medium text-background transition-colors hover:bg-foreground/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-background focus-visible:ring-offset-2 focus-visible:ring-offset-foreground"
+      className="inline-flex items-center rounded-md bg-foreground px-3 py-2 text-sm font-medium text-background transition-colors hover:bg-foreground/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-background focus-visible:ring-offset-2 focus-visible:ring-offset-foreground"
     >
       {label}
-      {icon}
     </a>
   );
 }
@@ -71,18 +69,10 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
 
         <div className="flex flex-wrap gap-2 pt-1">
           {project.links.visit ? (
-            <LinkButton
-              href={project.links.visit}
-              label="Visit"
-              icon={<ExternalLink className="h-3.5 w-3.5" />}
-            />
+            <LinkButton href={project.links.visit} label="Visit" />
           ) : null}
           {project.links.github ? (
-            <LinkButton
-              href={project.links.github}
-              label="GitHub"
-              icon={<Code2 className="h-3.5 w-3.5" />}
-            />
+            <LinkButton href={project.links.github} label="GitHub" />
           ) : null}
         </div>
       </header>
