@@ -58,7 +58,7 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
         <div className="flex flex-wrap items-start justify-between gap-3">
           <div className="space-y-2">
             <h1 className="text-3xl font-semibold text-foreground">{project.title}</h1>
-            <p className="max-w-3xl text-sm leading-6 text-muted-foreground">
+            <p className="max-w-3xl text-xs leading-5 text-muted-foreground">
               {project.subtitle}
             </p>
           </div>
