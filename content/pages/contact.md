@@ -13,4 +13,4 @@ Best response time is within **1–2 business days**.
 - **Email:** [caclassen@wisc.edu](mailto:caclassen@wisc.edu)
 - **LinkedIn:** [linkedin.com/in/christian-classen](https://www.linkedin.com/in/christian-classen/)
 - **GitHub:** [github.com/christian-egg](https://github.com/christian-egg)
-- **X:** [@Christian_C_Egg](https://x.com/Christian_C_Egg)
+- **Twitter (X):** [@Christian_C_Egg](https://x.com/Christian_C_Egg)
