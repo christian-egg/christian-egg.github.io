@@ -1,32 +1,25 @@
 ---
 title: Hey, I'm Christian.
-description: I build practical software products with a focus on clean user experience, maintainable architecture, and fast iteration.
-updatedAt: 2026-03-31
+description: M.S. Computer Science student at the University of Wisconsin–Madison. I work on trustworthy AI—safety evaluations, monitoring, and the robustness of ML systems and agents.
+updatedAt: 2026-04-02
 tags:
   - home
   - portfolio
 ---
 
-Portfolio in progress.
+I'm pursuing my **M.S. in Computer Science** at **UW–Madison** (2024–2026, GPA 3.80) after graduating from **UIUC** with a **B.S. in Computer Science** (2020–2024, GPA 3.96). My research focuses on **making AI systems more trustworthy** through rigorous safety evaluations and monitoring, and on **security and robustness** for AI agents.
 
-## Focus Areas
+## What I'm focused on
 
-### Product-minded development
-- Build software around clear user outcomes.
-- Prioritize practical improvements that ship quickly.
+- **Process reward models & reasoning:** I contributed to work on synthetic chain-of-thought data for training process reward models, including **VersaPRM** (ICML 2025).
+- **LLM behavior & safety:** I've studied plagiarism in model outputs (NSF REU at Penn State) and stay active in the **Wisconsin AI Safety Initiative** as exec board and tech scholar.
+- **Building & teaching:** I've led and mentored student engineering efforts (e.g. **Project Code**), and I care about clear communication and solid engineering practice.
 
-### Clean, maintainable code
-- Keep architecture simple and predictable.
-- Use reusable patterns that are easy to extend.
+## Selected publications
 
-### Fast feedback loops
-- Ship in small iterations.
-- Use testing and observability to reduce risk.
+- **VersaPRM: Multi-Domain Process Reward Model via Synthetic Reasoning Data** — T. Zeng, S. Zhang, S. Wu, **C. Classen**, D. Chae, E. Ewer, M. Lee, H. Kim, W. Kang, J. Kunde, Y. Fan, J. Kim, H. Koo, K. Ramchandran, D. Papailiopoulos, K. Lee. *International Conference on Machine Learning (ICML), 2025.*
+- **In-batch Ensemble Drafting: Robust Speculative Decoding for LVLMs** — M. Lee, W. Kang, B. Ahn, **C. Classen**, M. Yan, H. Koo, K. Lee. *ICLR 2025 SCOPE Workshop.*
 
-## Featured Work
+## On this site
 
-### Portfolio Site (In Progress)
-A statically exported Next.js portfolio for GitHub Pages with a sidebar layout and semantic theme tokens.
-
-### Data Dashboard (Shipped)
-A reporting interface for operational metrics with a focus on clarity and quick analysis.
+Browse **[Experience](/experience)** for research, leadership, and project history, **[Projects](/projects)** for software and portfolio work, and **[About](/about)** for a fuller background and awards.

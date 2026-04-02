@@ -1,28 +1,87 @@
 ---
-title: Professional experience
-description: Roles, responsibilities, and impact highlights across recent work.
-updatedAt: 2026-03-31
+title: Experience
+description: Research, independent study, internships, leadership, and project work from my CV.
+updatedAt: 2026-04-02
 tags:
   - experience
   - career
 ---
 
-## Software Developer · Recent Team
-- **Period:** 2024 - Present
-- **Location:** Remote
+## Research experience
 
-Building user-facing features and internal tools with a focus on reliability and delivery speed.
+### Research project · Prof. Kangwook Lee’s lab · UW–Madison
 
-- Improved release confidence by introducing automated checks and clearer deployment steps.
-- Reduced UI regressions by standardizing reusable components and page-level patterns.
-- Partnered with stakeholders to prioritize practical improvements that shipped quickly.
+**October 2024 – January 2025** · Faculty mentor: Kangwook Lee (ECE)
 
-## Junior Developer · Earlier Team
-- **Period:** 2022 - 2024
-- **Location:** Hybrid
+- Created **synthetic chain-of-thought reasoning data** to train a **Process Reward Model (PRM)**.
+- Implemented **auto-labelling** to produce ground-truth labels for fine-tuning.
 
-Contributed across frontend and backend tasks while growing full-stack engineering skills.
+### Independent study · Speech transcription · UIUC
 
-- Implemented key product enhancements based on user feedback.
-- Documented setup and troubleshooting steps to speed up team onboarding.
-- Supported incident fixes and post-release quality improvements.
+**August 2023 – January 2024** · Faculty mentor: Lawrence Angrave (CS)
+
+- Analyzed **Whisper** on **STEM lecture** audio.
+- Evaluated **fine-tuning** on a specific speaker’s voice with **limited training data**.
+
+### NSF REU internship · Penn State University
+
+**May 2023 – August 2023** · Faculty mentor: Dongwon Lee (College of IST)
+
+- Led a **10-week machine learning project** with a professor and PhD student mentor.
+- Studied **plagiarism from training data** in **large language model** outputs.
+- Found plagiarism in up to **~15%** of samples from **GPT-NeoX**; reduced it to roughly **2–5%** via **in-context learning** and **decoding** adjustments.
+
+### Independent study · Collaborative editing · UIUC
+
+**December 2022 – May 2023** · Faculty mentor: Lawrence Angrave (CS)
+
+- Surveyed **real-time collaborative editing**: **Operational Transformation (OT)** and **CRDTs**.
+- Recommended **ShareDB (OT)** for new features in **ClassTranscribe** and helped coordinate work with **Project Code**.
+
+---
+
+## Publications
+
+- **VersaPRM: Multi-Domain Process Reward Model via Synthetic Reasoning Data** — T. Zeng, S. Zhang, S. Wu, **C. Classen**, D. Chae, E. Ewer, M. Lee, H. Kim, W. Kang, J. Kunde, Y. Fan, J. Kim, H. Koo, K. Ramchandran, D. Papailiopoulos, K. Lee. *ICML, 2025.*
+- **In-batch Ensemble Drafting: Robust Speculative Decoding for LVLMs** — M. Lee, W. Kang, B. Ahn, **C. Classen**, M. Yan, H. Koo, K. Lee. *ICLR 2025 SCOPE Workshop.*
+- **Balancing Reality with Originality: How Prompting Affects Plagiarism in Language Models** — **C. Classen**, J. Lee, D. Lee.
+
+---
+
+## Presentations
+
+- **“An Investigation of Collaborative Editing Implementations”** — poster, **UIUC Undergraduate Research Symposium**, Urbana, IL, 2023.
+
+---
+
+## Leadership & extracurriculars
+
+### Wisconsin AI Safety Initiative (WAISI) · Exec board member
+
+**September 2025 – present**
+
+- Lead **weekly meetings** on current **AI safety** research.
+- Help **design curriculum** for an **intro AI safety** program for undergraduates.
+
+### Wisconsin AI Safety Initiative (WAISI) · Tech scholar
+
+**September 2024 – present**
+
+- Participate in weekly discussions on **AI safety** research topics.
+
+### Project Code · Vice president
+
+**June 2023 – May 2024**
+
+- Interviewed **project manager** candidates and ran **training**.
+- **Mentored** project managers so teams stayed on track.
+- Grew **projects per semester** with Professor **Lawrence Angrave**.
+- Helped organize **career events** (e.g. resume reviews, recruiter talks).
+
+### Project Code · Project manager
+
+**August 2022 – May 2023**
+
+- Led **two semester-long ML projects** (12–15 students each, many new to ML).
+- Produced **videos, slides, and demos** on core concepts.
+- Guided members through training their own **DCGAN** models in **PyTorch**.

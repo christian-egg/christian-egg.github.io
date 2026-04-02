@@ -47,7 +47,7 @@ const CONNECT_ITEMS: ConnectItem[] = [
   },
   {
     href: "https://x.com/Christian_C_Egg",
-    label: "X",
+    label: "Twitter (X)",
     iconSrc: "/icons/social/icons8-twitter-50.png",
     iconAlt: "X",
   },
@@ -80,7 +80,7 @@ export default function Sidebar() {
             </div>
             <p className="text-lg font-semibold text-foreground">Christian Classen</p>
             <p className="mt-1 text-sm text-muted-foreground">
-              Software developer and builder.
+              M.S. Computer Science, UW–Madison · AI safety & ML research.
             </p>
           </div>
 
