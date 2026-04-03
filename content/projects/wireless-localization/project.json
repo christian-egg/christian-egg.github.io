@@ -1,0 +1,14 @@
+{
+  "order": 3,
+  "title": "Wireless Localization Project",
+  "subtitle": "Localization of 3D environments to estimate crowd density",
+  "shortBlurb": "I worked with a team of 4 to develop a wireless localization system to estimate crowd density in a 3D environment.",
+  "thumbnail": "/projects/data-dashboard-thumb.png",
+  "heroImage": "/projects/data-dashboard-hero.png",
+  "tags": ["Wireless signals", "Localization", "3D Modeling", "NVIDIA Sionna"],
+  "status": "in-progress",
+  "featured": true,
+  "date": "2026-02-01",
+  "stack": ["Python", "NVIDIA Sionna", "Blender", "CUDA"],
+  "links": [{ "text": "GitHub", "url": "https://github.com/christian-egg" }]
+}
