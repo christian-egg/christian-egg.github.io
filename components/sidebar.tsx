@@ -69,30 +69,30 @@ export default function Sidebar() {
   const pathname = usePathname();
 
   return (
-    <aside className="w-full border-b border-sidebar-border bg-sidebar md:sticky md:top-0 md:h-screen md:w-72 md:border-b-0 md:border-r">
-      <div className="flex h-full flex-col justify-between p-6">
-        <div>
-          <div className="mb-8 border-b border-sidebar-border pb-6">
-            <div className="flex flex-col items-center text-center">
-              <div className="mb-4 h-32 w-32 shrink-0 overflow-hidden rounded-full border border-sidebar-border bg-muted">
-                <Image
-                  src="/images/christian_pfp.jpg"
-                  alt="Christian Classen"
-                  width={128}
-                  height={128}
-                  className="h-full w-full object-cover"
-                  priority
-                />
-              </div>
-              <p className="text-lg font-semibold text-foreground">Christian Classen</p>
-              <p className="mt-2 max-w-[16rem] text-sm text-muted-foreground">
-                M.S. Computer Science, UW–Madison · AI safety & ML research.
-              </p>
+    <aside className="w-full border-b border-sidebar-border bg-sidebar md:sticky md:top-0 md:min-h-screen md:w-72 md:border-b-0 md:border-r">
+      <div className="flex flex-col p-4 md:min-h-screen md:p-5">
+        <div className="shrink-0 border-b border-sidebar-border pb-3">
+          <div className="flex flex-col items-center text-center">
+            <div className="mb-3 h-28 w-28 shrink-0 overflow-hidden rounded-full border border-sidebar-border bg-muted">
+              <Image
+                src="/images/christian_pfp.jpg"
+                alt="Christian Classen"
+                width={112}
+                height={112}
+                className="h-full w-full object-cover"
+                priority
+              />
             </div>
+            <p className="text-lg font-semibold text-foreground">Christian Classen</p>
+            <p className="mt-1.5 max-w-[16rem] text-sm text-muted-foreground">
+              M.S. Computer Science, UW–Madison · AI safety & ML research.
+            </p>
           </div>
+        </div>
 
+        <div className="flex min-h-0 flex-1 flex-col justify-center py-5 md:py-6">
           <nav aria-label="Primary navigation">
-            <ul className="space-y-1">
+            <ul className="space-y-0.5">
               {NAV_ITEMS.map((item) => {
                 const active = isActivePath(pathname, item.href);
                 const Icon = item.icon;
@@ -101,7 +101,7 @@ export default function Sidebar() {
                   <li key={item.href}>
                     <Link
                       href={item.href}
-                      className={`flex items-center gap-3 rounded-md px-3 py-2 text-sm transition-colors ${
+                      className={`flex items-center gap-3 rounded-md px-3 py-1.5 text-sm transition-colors ${
                         active
                           ? "bg-nav-active text-nav-active-foreground"
                           : "text-muted-foreground hover:bg-muted hover:text-foreground"
@@ -117,18 +117,18 @@ export default function Sidebar() {
           </nav>
         </div>
 
-        <div className="mt-8 border-t border-sidebar-border pt-6">
-          <p className="mb-3 text-xs font-medium uppercase tracking-wide text-muted-foreground">
+        <div className="shrink-0 border-t border-sidebar-border pt-3">
+          <p className="mb-2 text-xs font-medium uppercase tracking-wide text-muted-foreground">
             Connect
           </p>
-          <ul className="space-y-2">
+          <ul className="space-y-1">
             {CONNECT_ITEMS.map((item) => (
               <li key={item.href}>
                 <a
                   href={item.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-between rounded-md px-3 py-2 text-sm text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+                  className="flex items-center justify-between rounded-md px-3 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
                 >
                   <span className="flex items-center gap-3">
                     <Image
