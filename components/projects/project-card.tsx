@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Project } from "@/lib/projects";
+import ProjectExternalLinkButton from "@/components/projects/project-external-link-button";
 import ProjectStatusBadge from "@/components/projects/project-status-badge";
 import ProjectTags from "@/components/projects/project-tags";
 
@@ -60,26 +61,15 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <div className="mt-2 border-t border-border pt-2">
           <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-x-3 gap-y-2">
             <div className="flex min-w-0 flex-wrap gap-2">
-              {project.links.visit ? (
-                <a
-                  href={project.links.visit}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center rounded-md bg-foreground px-2 py-1 text-xs font-medium text-background transition-colors hover:bg-foreground/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-background focus-visible:ring-offset-2 focus-visible:ring-offset-foreground"
+              {project.links.map((link, index) => (
+                <ProjectExternalLinkButton
+                  key={`${link.url}-${index}`}
+                  href={link.url}
+                  size="sm"
                 >
-                  Visit
-                </a>
-              ) : null}
-              {project.links.github ? (
-                <a
-                  href={project.links.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center rounded-md bg-foreground px-2 py-1 text-xs font-medium text-background transition-colors hover:bg-foreground/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-background focus-visible:ring-offset-2 focus-visible:ring-offset-foreground"
-                >
-                  GitHub
-                </a>
-              ) : null}
+                  {link.text}
+                </ProjectExternalLinkButton>
+              ))}
             </div>
             <p className="text-right text-xs tabular-nums text-muted-foreground whitespace-nowrap">
               {formatDate(project.date)}

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import type { Project } from "@/lib/projects";
+import ProjectExternalLinkButton from "@/components/projects/project-external-link-button";
 import ProjectStatusBadge from "@/components/projects/project-status-badge";
 import ProjectTags from "@/components/projects/project-tags";
 import ProjectSectionMarkdown from "@/components/projects/project-section-markdown";
@@ -8,24 +9,6 @@ import ProjectSectionMarkdown from "@/components/projects/project-section-markdo
 type ProjectDetailProps = {
   project: Project;
 };
-
-type LinkButtonProps = {
-  href: string;
-  label: string;
-};
-
-function LinkButton({ href, label }: LinkButtonProps) {
-  return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="inline-flex items-center rounded-md bg-foreground px-3 py-2 text-sm font-medium text-background transition-colors hover:bg-foreground/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-background focus-visible:ring-offset-2 focus-visible:ring-offset-foreground"
-    >
-      {label}
-    </a>
-  );
-}
 
 function formatDate(dateString: string): string {
   const date = new Date(`${dateString}T00:00:00`);
@@ -68,12 +51,15 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
         <ProjectTags tags={project.tags} />
 
         <div className="flex flex-wrap gap-2 pt-1">
-          {project.links.visit ? (
-            <LinkButton href={project.links.visit} label="Visit" />
-          ) : null}
-          {project.links.github ? (
-            <LinkButton href={project.links.github} label="GitHub" />
-          ) : null}
+          {project.links.map((link, index) => (
+            <ProjectExternalLinkButton
+              key={`${link.url}-${index}`}
+              href={link.url}
+              size="md"
+            >
+              {link.text}
+            </ProjectExternalLinkButton>
+          ))}
         </div>
       </header>
 

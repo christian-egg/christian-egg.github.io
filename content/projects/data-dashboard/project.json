@@ -10,7 +10,5 @@
   "featured": true,
   "date": "2025-09-20",
   "stack": ["React", "TypeScript", "REST API", "Chart.js"],
-  "links": {
-    "visit": "https://example.com/dashboard"
-  }
+  "links": [{ "text": "Visit", "url": "https://example.com/dashboard" }]
 }

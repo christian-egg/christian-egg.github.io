@@ -1,11 +1,11 @@
 import { readdirSync, readFileSync } from "node:fs";
 import path from "node:path";
 
-export type ProjectStatus = "planned" | "in-progress" | "shipped" | "archived";
+export type ProjectStatus = "planned" | "in-progress" | "shipped" | "archived" | "completed";
 
-export type ProjectLinks = {
-  visit?: string;
-  github?: string;
+export type ProjectLink = {
+  text: string;
+  url: string;
 };
 
 export type Project = {
@@ -20,7 +20,7 @@ export type Project = {
   featured: boolean;
   date: string;
   stack: string[];
-  links: ProjectLinks;
+  links: ProjectLink[];
   content: string;
 };
 
@@ -34,6 +34,7 @@ const VALID_STATUSES: ReadonlySet<ProjectStatus> = new Set<ProjectStatus>([
   "in-progress",
   "shipped",
   "archived",
+  "completed"
 ]);
 
 function readProjectContent(projectDirectory: string): string {
@@ -41,9 +42,35 @@ function readProjectContent(projectDirectory: string): string {
   return readFileSync(contentPath, "utf8").trim();
 }
 
-function parseProjectFile(projectDirectory: string): ProjectFileData {
+function parseProjectLinks(raw: unknown, slug: string): ProjectLink[] {
+  if (!Array.isArray(raw)) {
+    throw new Error(`Project "${slug}": "links" must be an array of { "text", "url" } objects.`);
+  }
+
+  return raw.map((entry, index) => {
+    if (typeof entry !== "object" || entry === null) {
+      throw new Error(`Project "${slug}": links[${index}] must be an object.`);
+    }
+
+    const { text, url } = entry as Record<string, unknown>;
+
+    if (typeof text !== "string" || typeof url !== "string") {
+      throw new Error(
+        `Project "${slug}": links[${index}] must have string "text" and "url" fields.`,
+      );
+    }
+
+    return { text, url };
+  });
+}
+
+function parseProjectFile(projectDirectory: string, slug: string): ProjectFileData {
   const jsonPath = path.join(projectDirectory, "project.json");
-  return JSON.parse(readFileSync(jsonPath, "utf8")) as ProjectFileData;
+  const parsed = JSON.parse(readFileSync(jsonPath, "utf8")) as Record<string, unknown>;
+
+  const links = parseProjectLinks(parsed.links, slug);
+
+  return { ...(parsed as ProjectFileData), links };
 }
 
 function loadProjects(): Project[] {
@@ -54,7 +81,7 @@ function loadProjects(): Project[] {
     .map((entry) => {
       const slug = entry.name;
       const projectDirectory = path.join(PROJECTS_DIRECTORY, slug);
-      const fileData = parseProjectFile(projectDirectory);
+      const fileData = parseProjectFile(projectDirectory, slug);
 
       if (!VALID_STATUSES.has(fileData.status)) {
         throw new Error(`Invalid project status "${fileData.status}" in ${slug}.`);

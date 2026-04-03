@@ -1,16 +1,14 @@
 {
   "order": 2,
-  "title": "Workflow Utility",
-  "subtitle": "This is the third placeholder project.",
-  "shortBlurb": "This is the third placeholder project.",
-  "thumbnail": "/projects/workflow-utility-thumb.png",
-  "heroImage": "/projects/workflow-utility-hero.png",
-  "tags": ["cli", "automation", "typescript"],
-  "status": "planned",
+  "title": "Lumen",
+  "subtitle": "A VR puzzle game built with Unity",
+  "shortBlurb": "Lumen is a light-based puzzle game I built for a VR course group project.",
+  "thumbnail": "/projects/lumen/Lumen_thumbnail.jpg",
+  "heroImage": "/projects/lumen/Lumen_thumbnail.jpg",
+  "tags": ["Personal", "Game-dev", "VR", "Unity"],
+  "status": "in-progress",
   "featured": false,
   "date": "2026-02-14",
-  "stack": ["Node.js", "TypeScript", "Commander", "pnpm"],
-  "links": {
-    "github": "https://github.com/christian-egg"
-  }
+  "stack": ["Unity", "C#"],
+  "links": [{ "text": "GitHub", "url": "https://github.com/christian-egg" }]
 }

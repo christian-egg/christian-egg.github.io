@@ -2,16 +2,16 @@
   "order": 1,
   "title": "Portfolio Site",
   "subtitle": "Static Next.js portfolio deployed to GitHub Pages",
-  "shortBlurb": "A statically exported portfolio with a sidebar layout, semantic theme tokens, and App Router pages.",
-  "thumbnail": "/projects/portfolio-site-thumb.png",
-  "heroImage": "/projects/portfolio-site-hero.png",
-  "tags": ["nextjs", "portfolio", "github-pages"],
-  "status": "in-progress",
+  "shortBlurb": "My personal portfolio website built with Next.js and Tailwind CSS.",
+  "thumbnail": "/projects/portfolio-site/Portfolio_thumbnail.jpg",
+  "heroImage": "/projects/portfolio-site/Portfolio_thumbnail.jpg",
+  "tags": ["Personal", "Web-dev"],
+  "status": "completed",
   "featured": true,
   "date": "2026-03-31",
   "stack": ["Next.js", "TypeScript", "Tailwind CSS", "GitHub Actions"],
-  "links": {
-    "visit": "https://christian-egg.github.io/",
-    "github": "https://github.com/christian-egg/christian-egg.github.io"
-  }
+  "links": [
+    { "text": "Visit", "url": "https://christian-egg.github.io/" },
+    { "text": "GitHub", "url": "https://github.com/christian-egg/christian-egg.github.io" }
+  ]
 }

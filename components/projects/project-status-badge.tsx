@@ -5,6 +5,7 @@ const STATUS_STYLES: Record<ProjectStatus, string> = {
   "in-progress": "border-accent bg-accent text-accent-foreground",
   shipped: "border-nav-active bg-nav-active text-nav-active-foreground",
   archived: "border-border bg-background text-muted-foreground",
+  completed: "border-nav-active bg-nav-active text-nav-active-foreground",
 };
 
 const STATUS_LABELS: Record<ProjectStatus, string> = {
@@ -12,6 +13,7 @@ const STATUS_LABELS: Record<ProjectStatus, string> = {
   "in-progress": "In Progress",
   shipped: "Shipped",
   archived: "Archived",
+  completed: "Completed",
 };
 
 type ProjectStatusBadgeProps = {
